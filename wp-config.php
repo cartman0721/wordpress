@@ -33,11 +33,11 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-define(¡®FTP_HOST¡¯,'localhost¡¯);
+define('FTP_HOST','localhost');
 
-define(¡®FTP_USER¡¯,'root);
+define('FTP_USER','root');
 
-define(¡®FTP_PASS¡¯,'forlife001');
+define('FTP_PASS','forlife001');
 /**#@+
  * Authentication Unique Keys and Salts.
  *
