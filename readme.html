@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>WordPress &#8250; 帮助文档</title>
+	<link rel="stylesheet" href="wp-admin/css/install.css?ver=20100228" type="text/css" />
+</head>
+<body>
+<h1 id="logo">
+	<a href="http://wordpress.org/"><img alt="WordPress" src="wp-admin/images/wordpress-logo.png" width="250" height="68" /></a>
+	<br /> 版本 3.2.1
+</h1>
+<p style="text-align: center">真正的个人信息发布平台</p>
+
+<h1>前言</h1>
+<p>欢迎使用WordPress！WordPress 对我来说是一个特别的项目。每个开发人员和做贡献的人都为 WordPress 加入独特的东西，我们使它更完美。我很高兴我是其中的一员。我们已经为它花去了上千小时的时间，并且继续工作使它变得更好。感谢您把它作为您生活的一部分。</p>
+<p style="text-align: right">&#8212; Matt Mullenweg</p>
+
+<h1>安装：著名的5分钟安装</h1>
+<ol>
+	<li>将压缩包解压缩到一个空目录中，并将所有文件都进行上传。</li>
+	<li>在您的浏览器中打开 <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span>。在处理的过程中会生成一个包含您数据库连接信息的 <code>wp-config.php</code> 文件。
+		<ol>
+			<li>如果不能自动生成该文件，也请不要担心。不是所有主机都可以自动生成的。您可以使用文本编辑器（尽量使用 Notepad++ 等类似的软件）打开 <code>wp-config-sample.php</code> 文件，并在其中填写您数据库的连接信息。</li>
+			<li>将该文件保存为 <code>wp-config.php</code>，并将其上传。</li>
+			<li>在浏览器中打开 <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span> 继续安装。</li>
+		</ol>
+	</li>
+	<li>一旦配置文件创建完毕，安装程序将会创建您博客所需的数据库表。如果出现错误，请仔细检查 <code>wp-config.php</code> 文件，然后重试。如果仍然出错，可以访问<a href="http://wordpress.org/support/" title="WordPress support">支持论坛</a>寻求帮助。</li>
+	<li><strong>如果您没有指定密码，那么请记录下为您随机生成的密码。</strong>如果您没有指定用户名，那么默认用户名将为 <code>admin</code>。</li>
+	<li>然后安装程序将为您显示一个<a href="wp-login.php">登录页面</a>。使用您在安装过程中选择的用户名和密码进行登录。如果密码是随机生成的，您可以访问'档案'页面来进行修改。</li>
+</ol>
+
+<h1>更新</h1>
+<h2>使用自动更新工具</h2>
+<p>如果您从 2.7 或更高的版本进行更新，您可以使用自动更新工具：</p>
+<ol>
+	<li>使用浏览器打开 <span class="file"><a href="wp-admin/update-core.php">wp-admin/update-core.php</a></span> 并参考其中的介绍进行操作。</li>
+	<li>然后……没有然后了……就是这么简单！</li>
+</ol>
+
+<h2>手动更新</h2>
+<ol>
+	<li>在更新任何东西之前，请先确保您对所有曾经修改过的文件进行了备份，例如对 <code>index.php</code> 文件进行的修改。</li>
+	<li>备份曾修改过的文件，然后删除老版本 WordPress 文件。</li>
+	<li>上传新版本文件。</li>
+	<li>使用浏览器访问 <span class="file"><a href="wp-admin/upgrade.php">/wp-admin/upgrade.php</a>。</span></li>
+</ol>
+
+<h2>主题模板修改</h2>
+<p>如果您对您的主题模板进行了自定义修改，您可能需要针对当前版本做一些改动。</p>
+
+<h1>从其它系统进行迁移</h1>
+<p>WordPress 可以从<a href="http://codex.wordpress.org/Importing_Content">很多系统中进行导入</a>。在使用<a href="wp-admin/import.php" title="Import to WordPress">我们的导入工具</a>之前，首先需要确定您的 WordPress 已经可以正常的运行。</p>
+
+<h1>系统要求</h1>
+<ul>
+	<li><a href="http://php.net/">PHP</a> 版本 <strong>5.2.4</strong> 或以上。</li>
+	<li><a href="http://www.mysql.com/">MySQL</a> 版本 <strong>5.0</strong> 或以上。</li>
+</ul>
+
+<h2>系统建议</h2>
+<ul>
+	<li>Apache 的 <a href="http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html">mod_rewrite</a> 模块。</li>
+	<li>在您的站点中指向 <a href="http://wordpress.org/">http://wordpress.org</a> 的链接。</li>
+</ul>
+
+<h1>在线资源</h1>
+<p>如果您的问题没有包含在本文档中，请充分使用 WordPress 丰富的在线资源：</p>
+<p>以下是官方资源（英文）</p>
+<dl>
+	<dt><a href="http://codex.wordpress.org/">The WordPress Codex</a></dt>
+		<dd>这是关于 WordPress 的百科全书，是最充分的 WordPress 信息来源。</dd>
+	<dt><a href="http://wordpress.org/news/">The WordPress Blog</a></dt>
+		<dd>在这里，您可以找到关于 WordPress 的最近的更新和新闻。您可以收藏并经常查看它。</dd>
+	<dt><a href="http://planet.wordpress.org/">WordPress Planet</a></dt>
+		<dd>WordPress Planet 是一个新闻聚集器，将互联网上 WordPress 博客 发表的文章收集在一起。</dd>
+	<dt><a href="http://wordpress.org/support/">WordPress Support Forums</a></dt>
+		<dd>如果您找不到问题的答案，您可以到这里求助。这里非常活跃，并且是个巨大的社区，可以为您提供帮助。在您寻求帮助时，请使用简单扼要的标题，并尽可能详细地描述您碰到的问题。</dd>
+	<dt><a href="http://codex.wordpress.org/IRC">WordPress <abbr title="Internet Relay Chat">IRC</abbr> Channel</a></dt>
+		<dd>这是一个在线聊天频道，聚集了一大批使用 WordPress 的用户。在上面的 wiki 页面，您可以找到进入频道的正确方法。（<a href="irc://irc.freenode.net/wordpress">irc.freenode.net #wordpress</a>）</dd>
+</dl>
+<p style="color: red;">中文用户请来这里 :)</p>
+<dl>
+	<dt><a href="http://www.wpcng.com/">中文团队博客</a></dt>
+		<dd>在这里，您可以找到关于 WordPress 中文团队 的最近的更新和新闻。您可以收藏并经常查看它。</dd>
+	<dt><a href="http://wfans.org/">WordPress 爱好者社区</a></dt>
+		<dd>如果您找不到问题的答案，您可以到这里求助。这是个巨大的社区，非常活跃，可以为您提供帮助。在您寻求帮助时，请使用简单扼要的标题，并尽可能详细地描述您碰到的问题。</dd>
+</dl>
+
+<h1><abbr title="eXtensible Markup Language">XML</abbr>-<abbr title="Remote Procedure Call">RPC</abbr> 和 Atom 接口</h1>
+<p>您现在可以通过一些工具来发表文章到您的博客，比如：<a href="http://download.live.com/writer">Windows Live Writer</a>，<a href="http://illuminex.com/ecto/">Ecto</a>，<a href="http://bloggar.com/">w.bloggar</a>，<a href="http://radio.userland.com/">Radio Userland</a>（使用 Radio 的 email-to-blog 功能），<a href="http://www.newzcrawler.com/">NewzCrawler</a>，以及其它支持博客 <abbr title="application programming interface">API</abbr> 的工具。这里是<a href="http://codex.wordpress.org/XML-RPC_Support">更多的 <abbr>XML</abbr>-<abbr>RPC</abbr> 支持</a>。</p>
+
+<h1>Post via Email</h1>
+<p>您可以从 Email 客户端发表文章！要使用这个功能，到&quot;撰写&quot;中填写有关您的保密的 <abbr title="Post Office Protocol version 3">POP3</abbr> 帐户的连接信息。您需要设置 <code>wp-mail.php</code> ，使它可以周期性地检查您邮箱中新文章的发表。您可以通过<a href="http://en.wikipedia.org/wiki/Cron">计划任务</a>实现，如果您的主机不支持，您可以尝试使用各种网站监视服务来检查您的 <code>wp-mail.php</code> <abbr title="Uniform Resource Locator">URL</abbr>。</p>
+<p>发送文章很容易：任何发送到指定邮箱的文章都会被发表，以邮件主题做为文章标题。最好保密该邮件地址。成功发表文章后，程序会<strong>删除</strong>邮件。</p>
+
+<h1>用户规则</h1>
+<p>我们已经取消了用户等级，以便在 2.0 版本中加入更灵活的用户角色系统。您可以<a href="http://codex.wordpress.org/Roles_and_Capabilities" title="WordPress 规则和权限">在 Codex 上得到更多有关角色和权限的信息</a>。</p>
+
+<h1>注意</h1>
+<ul>
+	<li>如果您有任何建议和评论，请到<a href="http://wordpress.org/support/">支持论坛</a>告诉我们。</li>
+	<li>WordPress 已经有一套健壮的插件 <abbr title="application programming interface">API</abbr> ，扩展代码更容易。如果您是开发人员并对运用这个感兴趣，可以查看 <a href="http://codex.wordpress.org/Plugin_API">Codex 上的插件文档</a>。大多数情况下，您不用更改核心代码。</li>
+</ul>
+
+<h1>分享</h1>
+<p>WordPress 没有数百万美圆的市场运作，也没有名人资助，但是我们有更好的&#8212;您。如果您喜欢 WordPress 请告诉您的朋友，帮助缺少技术的人安装 WordPress ,或者在媒体上表达您对 WordPress 的喜爱。</p>
+
+<p>WordPress 是 <a href="http://cafelog.com/">b2/caf&#233;log</a> 的后续开发版本，原始开发人是 Michel V。由 <a href="http://wordpress.org/about/">WordPress 开发人员</a>进行持续开发。如果您愿意支持 WordPress，请考虑 <a href="http://wordpress.org/donate/" title="赞助 WordPress">赞助</a> 的方式。</p>
+
+<h1>协议</h1>
+<p>WordPress 是自由软件，发布协议为 <abbr title="GNU General Public License">GPL 2</abbr>（如果你愿意，可以使用 GPL 2 的后续协议）（参见 <a href="license.txt">license.txt</a>）。</p>
+
+<h1>关于本中文版</h1>
+<p>由 WordPress 中文团队（非官方） ( <a href="http://www.wpcng.com/">http://www.wpcng.com/</a> | <a href="http://wfans.org/">交流论坛</a> | <a href="http://wpjam.com/">WP JAM</a> ) 制作并发布。</p>
+
+</body>
+</html>
