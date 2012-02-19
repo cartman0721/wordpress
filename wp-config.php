@@ -37,7 +37,7 @@ define('FTP_HOST','localhost');
 
 define('FTP_USER','root');
 
-define('FTP_PASS','forlife001');
+define('FTP_PASS','3drmOu57H2');
 /**#@+
  * Authentication Unique Keys and Salts.
  *
